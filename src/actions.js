@@ -13,6 +13,7 @@ export const setSearchField = (text) => (
 
     //Higher order function, a function that returns a function 
 export const requestRobots = () => (dispatch) => {
+    console.log("onRequestRobots")
     dispatch({ type: REQUEST_ROBOTS_PENDING });
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())

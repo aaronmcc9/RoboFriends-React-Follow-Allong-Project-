@@ -26,7 +26,6 @@ const initialStateRobots = {
 }
 
 export const requestRobots = (state = initialStateRobots, action = {}) => {
-    console.log(action)
     switch (action.type) {
         case REQUEST_ROBOTS_PENDING:
             return Object.assign({}, state, { isPending: true });
